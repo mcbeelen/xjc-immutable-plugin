@@ -145,6 +145,39 @@ confirms the standard bean contract. But we love immutability!
 </plugin>
 ```
 
+# jaxb2-maven-plugin
+```xml
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>jaxb2-maven-plugin</artifactId>
+    <version>2.2</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.danielwegener.xjc</groupId>
+            <artifactId>xjc-immutable-plugin</artifactId>
+            <version>0.1</version>
+    </dependency>
+    </dependencies>
+    <executions>
+        <execution>
+            <id>xjc</id>
+            <goals>
+                <goal>xjc</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <arguments>
+            <argument>-Ximmutable-model</argument>
+        </arguments>
+        <outputDirectory>${basedir}/target/generated-sources/jaxb2/</outputDirectory>
+        <extension>true</extension>
+    </configuration>
+</plugin>
+
+```
+
+
 # direct xjc invokation
 
 TODO: example
