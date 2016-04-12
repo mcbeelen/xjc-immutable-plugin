@@ -100,7 +100,7 @@ confirms the standard bean contract. But we love immutability!
     <dependencies>
        <dependency>
            <groupId>com.github.danielwegener.xjc</groupId>
-           <artifactId>xjc-guava-plugin</artifactId>
+           <artifactId>xjc-immutable-plugin</artifactId>
            <version>0.1</version>
        </dependency>
     </dependencies>
@@ -138,7 +138,7 @@ confirms the standard bean contract. But we love immutability!
     <dependencies>
         <dependency>
            <groupId>com.github.danielwegener.xjc</groupId>
-           <artifactId>xjc-guava-plugin</artifactId>
+           <artifactId>xjc-immutable-plugin</artifactId>
            <version>0.1</version>
        </dependency>
     </dependencies>
